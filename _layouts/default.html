@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Detail Admin - Home</title>
+	<title>{% if page.title %} {{ page.title }} | {% endif %} SMS Admin</title>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	
@@ -124,9 +124,15 @@
                 </a>
             </li>
             <li class="">
-                <a class="tab9" href="personal-info.html">
+                <a class="tab2" href="#products.html">
+                    <i class="icon-shopping-cart icon-large"></i>
+                    <span>Products</span>
+                </a>
+            </li>
+            <li class="">
+                <a class="tab9" href="#">
                     <i class="sidebar-gear"></i>
-                    <span>My Info</span>
+                    <span>Settings</span>
                 </a>
             </li>
             <li class="">
