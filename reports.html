@@ -46,11 +46,9 @@
             <div class="nav-collapse collapse visible-phone mobile-menu">
                 <ul class="nav">
                     <li><a href="index.html">Home</a></li>
-                    <li class="active"><a href="chart-showcase.html">Charts</a></li>
+                    <li><a href="sms.html">SMS</a></li>
+                    <li class="active"><a href="reports.html">Reports</a></li>
                     <li><a href="user-list.html">Users</a></li>
-                    <li><a href="sms.html">Send SMS</a></li>
-                    <li><a href="tables.html">Tables</a></li>
-                    <li><a href="ui-elements.html">UI Elements</a></li>
                 </ul>
             </div>
             <!-- end navbar for mobile devices -->
@@ -90,7 +88,7 @@
             <li class="">
                 <a class="tab3" href="sms.html">
                     <i class="sidebar-forms"></i>
-                    <span>Send SMS</span>
+                    <span>SMS</span>
                 </a>
             </li>         
             <li class="">
@@ -137,9 +135,9 @@
             <div id="pad-wrapper">
                 <!-- morris stacked chart -->
                 <div class="row-fluid">
-                    <h4 class="title">Morris.js stacked</h4>
+                    <h4 class="title">Transactions</h4>
                     <div class="span12">
-                        <h5>Quarterly Apple iOS device unit sales</h5>
+                        <h5>Last quarter, all departments</h5>
                         <br>
                         <div id="hero-area" style="height: 250px;"></div>
                     </div>
@@ -147,7 +145,7 @@
 
                 <!-- morris graph chart -->
                 <div class="row-fluid section">
-                    <h4 class="title">Morris.js <small>Monthly growth</small></h4>
+                    <h4 class="title">Adoption <small>Monthly growth</small></h4>
                     <div class="span12 chart">                        
                         <div id="hero-graph" style="height: 230px;"></div>
                     </div>
@@ -156,7 +154,7 @@
                 <!-- jQuery flot chart -->
                 <div class="row-fluid section">
                     <h4 class="title">
-                        jQuery Flot <small>Monthly growth</small>
+                        SMS compared to other <small>Monthly growth</small>
                         <div class="btn-group pull-right">
                             <button class="glow left">DAY</button>
                             <button class="glow middle active">MONTH</button>
@@ -171,10 +169,9 @@
                 <!-- morris bar & donut charts -->
                 <div class="row-fluid section">
                     <h4 class="title">
-                        Morris.js
+                        Departments
                     </h4>
                     <div class="span6 chart">
-                        <h5>Devices sold</h5>
                         <div id="hero-bar" style="height: 250px;"></div>
                     </div>
                     <div class="span5 chart">
@@ -184,8 +181,8 @@
                 </div>
 
                 <!-- jQuery knobs -->
-                <div class="row-fluid section">
-                    <h4 class="title">jQuery Knob</h4>
+               <!--  <div class="row-fluid section">
+                    <h4 class="title">Something else</h4>
                     <div class="row-fluid">
                         <div class="span3">     
                             <input type="text" value="50" class="knob second" data-thickness=".3" data-inputColor="#333" data-fgColor="#30a1ec" data-bgColor="#d4ecfd" data-width="140">
@@ -200,7 +197,7 @@
                             <input type="text" value="85" class="knob second" data-thickness=".3" data-inputColor="#333" data-fgColor="#b85e80" data-bgColor="#f8d2e0" data-width="140">
                         </div>
                     </div>
-                </div>
+                </div> -->
 
             </div>
         </div>
@@ -231,9 +228,9 @@
         Morris.Bar({
             element: 'hero-bar',
             data: [
-                {device: '1', sells: 136},
-                {device: '3G', sells: 1037},
-                {device: '3GS', sells: 275},
+                {device: 'All', sells: 136},
+                {device: 'AS', sells: 1037},
+                {device: 'TRV', sells: 275},
                 {device: '4', sells: 380},
                 {device: '4S', sells: 655},
                 {device: '5', sells: 1571}

@@ -4,17 +4,14 @@ title: Send SMS
 ---
 <div id="tabs-wrapper">
 <div class="row-fluid">
-    <a class="span2 tab active" href="form-showcase.html">
+    <a class="span2 tab active" href="sms.html">
         Send SMS
     </a>
-    <a class="span2 tab" href="user-list.html">
-        Users list
+    <a class="span2 tab" href="#">
+        SMS history
     </a>
-    <a class="span2 tab" href="new-user.html">
-        New user form
-    </a>
-    <a class="span2 tab" href="user-profile.html">
-        User profile
+    <a class="span2 tab" href="#">
+        Lists
     </a>
 </div>
 </div>
@@ -30,17 +27,14 @@ title: Send SMS
             </div>                         
                                       
             <div class="field-box">
-                <label>SMS campaign</label>
+                <label>SMS text</label>
                 <textarea class="span8" rows="4"></textarea>
             </div>
             <div class="field-box">
                 <label>Trigger signup:</label>
-                <label class="radio">
-                    <input type="radio" selected="selected" /> Yes
-                </label>
-                <label class="radio">
-                    <input type="radio" /> No
-                </label>
+                <div class="slider-frame primary">
+                    <span data-on-text="ON" data-off-text="OFF" class="slider-button">OFF</span>
+                </div>
             </div>
         </form>
     </div>
@@ -121,8 +115,7 @@ title: Send SMS
                     <option></option>
                     <option value="AK">All users</option>
                     <option value="HI" selected>Myself (test)</option>
-                    <option value="CA">Young people</option>
-                    <option value="NV">Allershopping all</option>
+                    <option value="NV">Allershopping</option>
                     <option value="OR">Some other list</option>
                     <option value="WA">Something else</option>
                 </select>
@@ -130,9 +123,9 @@ title: Send SMS
             <br>
 
             <div class="field-box">
-                <label>Send SMS on:</label>
-                <input type="text" value="06/29/2013" class="input-large datepicker" />
+                <a href="#" class="btn large btn-glow success">Send SMS</a>
             </div>
+
         </form>
     </div>
 </div>
